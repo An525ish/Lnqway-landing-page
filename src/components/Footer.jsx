@@ -1,8 +1,14 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 
+
+let date = new Date()
+let year = date.getFullYear()
+
+
 const Footer = () => {
     return (
+
         <footer>
             <div className='bg-[#1c1c1c] text-white p-10 md:p-12 flex flex-wrap justify-around text-[1.2rem] gap-y-8'>
                 <div className='w-[80%] md:w-[30%] '>
@@ -59,7 +65,8 @@ const Footer = () => {
                     <span className='hover:text-[#583bff] duration-500'><a href="#">Privacy & Terms</a> </span>
                     <span className='hover:text-[#583bff] duration-500'><a href="#">Contact Us</a> </span>
                 </div>
-                <span>Copyright @2022 <a href="#" className='hover:text-[#583bff]  duration-500'>Linqway</a> </span>
+
+                <span>Copyright @ {year} <a href="#" className='hover:text-[#583bff]  duration-500'>Linqway</a> </span>
                 <span className='hover:text-[#583bff] duration-500'><a href="#">About Us</a></span>
             </div>
         </footer>

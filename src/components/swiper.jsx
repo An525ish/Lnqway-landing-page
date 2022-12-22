@@ -27,21 +27,21 @@ export default function SliderComponent() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper w-[80%] mt-[5rem] h-[35rem] text-center"
+                className="mySwiper w-[100%] md:w-[80%] mt-[5rem] h-[35rem] text-center"
             >
-                <SwiperSlide className="p-28 flex justify-center">
+                <SwiperSlide className="md:p-28 pt-28 flex justify-center">
                     <Customertestimonial
                         name="Andrew"
                         img={profile1}
                         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?" />
                 </SwiperSlide>
-                <SwiperSlide className="p-28 flex justify-center">
+                <SwiperSlide className="md:p-28 pt-28 flex justify-center">
                     <Customertestimonial
                         name="Andrew"
                         img={profile2}
                         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat, consequuntur doloribus voluptate esse iure?" />
                 </SwiperSlide>
-                <SwiperSlide className="p-28 flex justify-center">
+                <SwiperSlide className="md:p-28 pt-28 flex justify-center">
                     <Customertestimonial
                         name="Andrew"
                         img={profile3}
