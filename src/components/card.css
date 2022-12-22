@@ -1,0 +1,27 @@
+
+.cards {
+    position: relative;
+    width: 16rem;
+}
+
+.card{
+    position: absolute;
+    top : 0;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+    width: 14rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+    gap : 1rem;
+}
+
+.card img{
+    transition: transform .3s ease-out;
+}
+
+.card:hover img{
+    transform: translateY(-10%);
+}

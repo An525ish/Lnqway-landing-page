@@ -1,0 +1,98 @@
+.testi-card {
+    width: 20rem;
+    height: 23rem;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+   }
+   
+   .testi-card:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: #4bb8ff;
+   }
+   
+   .testi-card .blob {
+    height: 1rem;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: #4bb8ff;
+    visibility: visible;
+    transition: all 0.3s;
+   }
+   
+   .testi-card:hover .blob {
+    height: 0;
+   }
+   
+   .testi-card .img {
+    display: flex;
+    margin: 30px auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: #4bb8ff;
+    border-radius: 50%;
+    font-size: 10rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .testi-card:hover .img {
+    width: 80%;
+    height: 70%;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    z-index: 99;
+   }
+   
+   .testi-card h2 {
+    padding: 15px 10px;
+    font-size: 2rem;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: .8;
+   }
+   
+   .testi-card span {
+    font-size: 1.5rem;
+   }
+   
+   .testi-card:hover h2 {
+    opacity: 0;
+    width: 100%;
+    /* position: absolute; */
+    transition: all 0.5s;
+   }
+   
+   .testi-card>p {
+    opacity: 0;
+    transition: all 0.75s;
+   }
+   
+   .testi-card>p>span {
+    padding: 10px;
+   }
+   
+   .testi-card:hover>p {
+    opacity: 1;
+    position: absolute;
+    z-index: 999;
+    bottom: 8%;
+    left: 25%;
+    transition: all 0.1s;
+   }
+
+   .testi-card >p ion-icon{
+    color : white;
+    cursor: pointer;
+   }
+
+   .testi-card >p ion-icon:hover{
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+   }
