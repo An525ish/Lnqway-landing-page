@@ -8,11 +8,13 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrolltoTop from './components/ScrolltoTop';
 import './index.css'
+// import Modes from './components/modes'
 
 
 const App = () => {
   return (
     <div>
+      {/* <Modes/> */}
       <Navbar/>
       <Home/>
       <About/>
